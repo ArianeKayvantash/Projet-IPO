@@ -10,10 +10,9 @@ public class Frog implements IFrog {
 	private Case coord;
 	private Direction direct;
 
-	public Frog(Game game, int abcs, int ord){
+	public Frog(Game game){
 		this.game= game;
-		this.coord.abcs=abcs;
-		this.coord.ord=ord;
+		this.coord=new Case(0,0);
 		this.direct=Direction.up;
 	}
 
