@@ -2,7 +2,6 @@ package frog;
 
 import gameCommons.Game;
 import gameCommons.IFrog;
-import package util;
 
 public class Frog implements IFrog {
 	
@@ -12,7 +11,7 @@ public class Frog implements IFrog {
 
 	public Frog(Game game){
 		this.game= game;
-		this.coord=new Case(0,0);
+		this.coord=new Case(width/2,0);
 		this.direct=Direction.up;
 	}
 
